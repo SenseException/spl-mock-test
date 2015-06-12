@@ -14,6 +14,8 @@ therefore failing tests.
 * `testSplError()` is the failing test
 * `testSplWorks()` is the workaround to make the test pass
 
+### PHP versions
+
 * 5.3 - pass
 * 5.4 - PHPUnit_Framework_MockObject_RuntimeException: unserialize()
 * 5.5 - PHPUnit_Framework_MockObject_RuntimeException: unserialize()
