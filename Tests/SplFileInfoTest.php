@@ -7,7 +7,7 @@ class SplFileInfoTest extends \PHPUnit_Framework_TestCase
     public function testSplError()
     {
         // the following mock creation triggers an error
-        $spl = $this->getMockBuilder(SPLFileInfo::CLASS)
+        $spl = $this->getMockBuilder('SPLFileInfo')
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -22,7 +22,7 @@ class SplFileInfoTest extends \PHPUnit_Framework_TestCase
     public function testSplWorks()
     {
         // Constructor gets a parameter for this mock
-        $spl = $this->getMockBuilder(SPLFileInfo::CLASS)
+        $spl = $this->getMockBuilder('SPLFileInfo')
             ->setConstructorArgs([__DIR__])
             ->getMock();
 
