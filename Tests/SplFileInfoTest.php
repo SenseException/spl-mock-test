@@ -23,7 +23,7 @@ class SplFileInfoTest extends \PHPUnit_Framework_TestCase
     {
         // Constructor gets a parameter for this mock
         $spl = $this->getMockBuilder('SPLFileInfo')
-            ->setConstructorArgs([__DIR__])
+            ->setConstructorArgs(array(__DIR__))
             ->getMock();
 
         $spl->expects($this->once())
