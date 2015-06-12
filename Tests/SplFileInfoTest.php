@@ -2,12 +2,11 @@
 
 namespace Tests;
 
-class SplTest extends PHPUnit_Framework_TestCase
+class SplFileInfoTest extends \PHPUnit_Framework_TestCase
 {
     public function testSplError()
     {
         // the following mock creation triggers an error
-
         $spl = $this->getMockBuilder(SPLFileInfo::CLASS)
             ->disableOriginalConstructor()
             ->getMock();
