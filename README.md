@@ -6,6 +6,7 @@ See on Travis.ci which SPL mock creations fail:
 
 [![Build Status](https://travis-ci.org/SenseException/spl-mock-test.svg?branch=master)](https://travis-ci.org/SenseException/spl-mock-test)
 
+
 ## SplFileInfo
 
 Creating a mock of SplFileInfo disabling the constructor results in an error and
@@ -16,9 +17,9 @@ therefore failing tests.
 
 ### PHP versions
 
-* 5.3 - pass
-* 5.4 - PHPUnit_Framework_MockObject_RuntimeException: unserialize()
-* 5.5 - PHPUnit_Framework_MockObject_RuntimeException: unserialize()
-* 5.6 - pass
-* 7.0 - pass
-* hhvm - pass
+| 5.3 | 5.4 | 5.5 | 5.6 | 7.0 | hhvm |
+| --- | --- | --- | --- | --- | ---- |
+| pass | fail | fail | pass | pass | pass |
+
+PHP 5.4 and 5.5 are failing with:
+PHPUnit_Framework_MockObject_RuntimeException: unserialize(): Error at offset 36 of 37 bytes
