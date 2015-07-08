@@ -7,10 +7,10 @@ See on Travis.ci which SPL mock creations fail:
 [![Build Status](https://travis-ci.org/SenseException/spl-mock-test.svg?branch=master)](https://travis-ci.org/SenseException/spl-mock-test)
 
 
-## SplFileInfo
+## Spl Filesystem classes
 
-Creating a mock of SplFileInfo disabling the constructor results in an error and
-therefore failing tests. 
+Creating a mock of SplFileInfo, SplFileObject, DirectoryIterator and FilesystemIterator
+disabling the constructor results in an error and therefore failing tests. 
 
 * `testSplError()` is the failing test
 * `testSplWorks()` is the workaround to make the test pass
