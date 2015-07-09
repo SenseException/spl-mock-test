@@ -2,8 +2,11 @@
 
 namespace Tests;
 
-class SplFileInfoTest extends \PHPUnit_Framework_TestCase
+class SplFileSystemTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @dataProvider classNameProvider
+     */
     public function testSplError()
     {
         // the following mock creation triggers an error
@@ -19,6 +22,9 @@ class SplFileInfoTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('Foo.php', $spl->getFileName());
     }
 
+    /**
+     * @dataProvider classNameProvider
+     */
     public function testSplWorks()
     {
         // Constructor gets a parameter for this mock
@@ -31,5 +37,18 @@ class SplFileInfoTest extends \PHPUnit_Framework_TestCase
             ->will($this->returnValue('Foo.php'));
 
         $this->assertEquals('Foo.php', $spl->getFileName());
+    }
+
+    /**
+     * @return array
+     */
+    public function classNameProvider()
+    {
+        return array(
+            array('SPLFileInfo'),
+            array('SPLFileObject'),
+            array('DirectoryIterator'),
+            array('FilesystemIterator'),
+        );
     }
 }
