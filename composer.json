@@ -2,7 +2,7 @@
     "name": "sense-exception/spl-mock-test", 
     "description": "Tests to see which SPL classes can't be mocked",
     "require": {
-        "phpunit/phpunit": "4.5.0"
+        "phpunit/phpunit": "4.5.0 || ^8.0"
     },
     "autoload": {
         "psr-4": { "Tests\\": "Tests/" }

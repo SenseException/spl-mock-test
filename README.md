@@ -17,9 +17,9 @@ disabling the constructor results in an error and therefore failing tests.
 
 ### PHP versions
 
-| 5.3 | 5.4 | 5.5 | 5.6 | 7.0 | hhvm |
-| --- | --- | --- | --- | --- | ---- |
-| pass | fail | fail | pass | pass | pass |
+| 5.3 | 5.4 | 5.5 | 5.6 | 7.0 | 7.1 | 7.2 | 7.3 | 7.4 | hhvm |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | ---- |
+| pass | fail | fail | pass | pass | pass | pass | pass | pass | pass |
 
 PHP 5.4 and 5.5 are failing with:
 PHPUnit_Framework_MockObject_RuntimeException: unserialize(): Error at offset 36 of 37 bytes
